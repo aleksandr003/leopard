@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <!-- Шапка-сайта -->
     <header class="header">
-      <a class="link-logo" href="#"><span class="accent">Web</span>Studio</a>
+      <a class="link-logo link" href="#"
+        ><span class="accent">Web</span>Studio</a
+      >
       <nav class="nav">
         <ul class="nav-list list">
           <li><a class="link" href="/index.html">Студія</a></li>
@@ -31,19 +40,27 @@
     <main>
       <!--Услуги кнопок-->
       <section class="section">
-        <h2 class="title">Наші послуги</h2>
+        <h2 class="hidden">Наші послуги</h2>
         <ul class="portfolio-list list">
-          <li><button class="button" type="button">Усі</button></li>
-          <li><button class="button" type="button">Веб-сайти</button></li>
-          <li><button class="button" type="button">Додатки</button></li>
-          <li><button class="button" type="button">Дизайн</button></li>
-          <li><button class="button" type="button">Маркетинг</button></li>
+          <li><button class="portfolio-button" type="button">Усі</button></li>
+          <li>
+            <button class="portfolio-button" type="button">Веб-сайти</button>
+          </li>
+          <li>
+            <button class="portfolio-button" type="button">Додатки</button>
+          </li>
+          <li>
+            <button class="portfolio-button" type="button">Дизайн</button>
+          </li>
+          <li>
+            <button class="portfolio-button" type="button">Маркетинг</button>
+          </li>
         </ul>
       </section>
 
       <!--Список Услуг-->
       <section class="section">
-        <h2 class="title">Наші послуги</h2>
+        <h2 class="hidden">Наші послуги</h2>
         <ul class="list">
           <li>
             <img
@@ -53,8 +70,8 @@
               width="370"
               height="294"
             />
-            <h3 class="title">Технокряк</h3>
-            <p class="text">Веб-сайт</p>
+            <h3 class="services-title">Технокряк</h3>
+            <p class="services-text">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -64,8 +81,8 @@
               width="370"
               height="294"
             />
-            <h3 class="title">Постер New Orlean vs Golden Star</h3>
-            <p class="text">Дизайн</p>
+            <h3 class="services-title">Постер New Orlean vs Golden Star</h3>
+            <p class="services-text">Дизайн</p>
           </li>
           <li>
             <img
@@ -75,8 +92,8 @@
               width="370"
               height="294"
             />
-            <h3 class="title">Ресторан Seafood</h3>
-            <p class="text">Додаток</p>
+            <h3 class="services-title">Ресторан Seafood</h3>
+            <p class="services-text">Додаток</p>
           </li>
           <li>
             <img
@@ -86,8 +103,8 @@
               width="370"
               height="294"
             />
-            <h3 class="title">Проєкт Prime</h3>
-            <p class="text">Маркетинг</p>
+            <h3 class="services-title">Проєкт Prime</h3>
+            <p class="services-text">Маркетинг</p>
           </li>
           <li>
             <img
@@ -97,8 +114,8 @@
               width="370"
               height="294"
             />
-            <h3 class="title">Проєкт Boxes</h3>
-            <p class="text">Додаток</p>
+            <h3 class="services-title">Проєкт Boxes</h3>
+            <p class="services-text">Додаток</p>
           </li>
           <li>
             <img
@@ -108,8 +125,8 @@
               width="370"
               height="294"
             />
-            <h3 class="title">Inspiration has no Borders</h3>
-            <p class="text">Веб-сайт</p>
+            <h3 class="services-title">Inspiration has no Borders</h3>
+            <p class="services-text">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -119,8 +136,8 @@
               width="370"
               height="294"
             />
-            <h3 class="title">Видання Limited Edition</h3>
-            <p class="text">Дизайн</p>
+            <h3 class="services-title">Видання Limited Edition</h3>
+            <p class="services-text">Дизайн</p>
           </li>
           <li>
             <img
@@ -130,8 +147,8 @@
               width="370"
               height="294"
             />
-            <h3 class="title">Проєкт LAB</h3>
-            <p class="text">Маркетинг</p>
+            <h3 class="services-title">Проєкт LAB</h3>
+            <p class="services-text">Маркетинг</p>
           </li>
           <li>
             <img
@@ -141,8 +158,8 @@
               width="370"
               height="294"
             />
-            <h3 class="title">Growing Business</h3>
-            <p class="text">Додаток</p>
+            <h3 class="services-title">Growing Business</h3>
+            <p class="services-text">Додаток</p>
           </li>
         </ul>
       </section>
@@ -154,10 +171,12 @@
       <address class="address">
         <p class="footer-text">
           м. Київ, пр-т Лесі Українки, 26
-          <a class="link" href="mailto:info@devstudio.com"
+          <a class="footer-link link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
-          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="footer-link link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </p>
       </address>
     </footer>
